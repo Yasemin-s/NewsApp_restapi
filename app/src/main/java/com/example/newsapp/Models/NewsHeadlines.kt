@@ -1,6 +1,6 @@
 package com.example.newsapp.Models
 
-class NewsHeadlines {
+class NewsHeadlines : java.io.Serializable {
 
     var source: Source? = null
     var author: String = ""

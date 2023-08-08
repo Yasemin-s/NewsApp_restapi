@@ -1,6 +1,11 @@
 package com.example.newsapp
 
 import com.example.newsapp.Models.NewsHeadlines
+
+interface OnFetchDataListener {
+    fun onFetchData(list: List<NewsHeadlines>, message: String)
+    fun onError(message: String)
+}
 /*
 interface OnFetchDataListener <NewsApiResponse>{
 
@@ -11,8 +16,3 @@ interface OnFetchDataListener <NewsApiResponse>{
     fun onError(message: String)
 }
 */
-
-interface OnFetchDataListener {
-    fun onFetchData(list: List<NewsHeadlines>, message: String)
-    fun onError(message: String)
-}
